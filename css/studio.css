@@ -1,0 +1,187 @@
+/* ViralReels AI - Phase 4 AI Video Studio Styles */
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.studio-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.studio-step-badge {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.16);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-row-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+textarea.studio-textarea {
+  width: 100%;
+  min-height: 130px;
+  background: var(--bg-body);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+textarea.studio-textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.toggle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 14px 0 18px;
+}
+
+.toggle-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-body);
+  border: 1px solid var(--border-subtle);
+  padding: 10px 13px;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.toggle-pill input {
+  accent-color: var(--accent-primary);
+}
+
+.studio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.preview-phone {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto 16px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, #17152b 0%, #09090f 100%);
+  border: 2px solid rgba(139, 92, 246, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+.preview-phone.ratio-16-9 {
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.preview-phone.ratio-1-1 {
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+}
+
+.preview-tag {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 4px 9px;
+  border-radius: 999px;
+  color: #e2e8f0;
+}
+
+.preview-caption-box {
+  background: rgba(0, 0, 0, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.scene-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.scene-item {
+  background: var(--bg-body);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-size: 0.84rem;
+}
+
+.scene-item strong {
+  color: #c4b5fd;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.audio-box {
+  margin-top: 14px;
+  padding: 12px;
+  background: var(--bg-body);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+}
+
+.audio-box audio {
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row-2,
+  .form-row-3,
+  .toggle-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,7 +4,7 @@
 
 window.VIRALREELS_CONFIG = {
   SUPABASE_URL: "https://cypbwmpcjrcfjuhlwwaj.supabase.co",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY",
+  SUPABASE_ANON_KEY: "sb_publishable__DwxFlAHxIUi8Zy2nUY2qg_vUiTu6rt",
   APP_NAME: "ViralReels AI",
   DEMO_STORAGE_KEY: "viralreels_demo_user"
 };
